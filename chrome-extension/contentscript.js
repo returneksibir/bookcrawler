@@ -1,5 +1,5 @@
 
-var re = /ISBN[:\s]*([X0-9\\-]*)/g;
+var re = /[Ii][Ss][Bb][Nn][:\s]*([X0-9\\-]*)/g;
 rawISBN = document.body.innerText.match(re)[0];
 isbn = rawISBN.replace(/-/g, "").slice(-10, -1)
 
